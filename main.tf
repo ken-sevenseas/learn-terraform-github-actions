@@ -15,16 +15,16 @@ terraform {
   required_version = ">= 1.1.0"
 
   cloud {
-    organization = "REPLACE_ME"
+    organization = "05nervier_outfit"
 
     workspaces {
-      name = "learn-terraform-github-actions"
+      name = "gh-actions-demo"
     }
   }
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "ap-southeast-1"
 }
 
 resource "random_pet" "sg" {}
